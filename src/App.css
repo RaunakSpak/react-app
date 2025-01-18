@@ -2,12 +2,12 @@
   text-align: center;
 }
 
-div{
+div {
   text-align: center;
   margin-top: 50px;
 }
 
-button{
+/* button{
   padding: 10px 20px;
   color: white;
   border: none;
@@ -35,4 +35,50 @@ button{
   border: 1px solid red;
   border-radius: 5px;
   transition: .3s ease-in-out;
+} */
+
+.user-card {
+  border: 2px solid transparent; 
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: linear-gradient(to bottom right, transparent, transparent);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.user-card:hover {
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  background-clip: padding-box, border-box;
+  animation: border-fill 4s ease-in-out; 
+}
+
+@keyframes border-fill {
+  0% {
+    border: linear-gradient(to bottom right, transparent, transparent);
+  }
+  100% {
+    border: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  }
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.user-name {
+  margin: 10px 0;
+}
+
+.user-bio {
+  font-style: italic;
+  color: #555;
 }
