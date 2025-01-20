@@ -4,10 +4,10 @@
 // import Counter from './counter';
 
 // const App = () => {
-  
+
 //   const [count, setCount] = useState(0);
 
-  
+
 //   const increment = () => {
 //     setCount(count + 1);
 //   };
@@ -36,28 +36,50 @@
 // export default App;
 
 
-import React from 'react';
-import UserCard from './UserCard';
-import './App.css';
+// import React from 'react';
+// import UserCard from './UserCard';
+// import './App.css';
 
-const App = () => {
-  return (
-    <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h1>User Profiles</h1>
-      <UserCard
-        name="Hariom singh"
-        age={28}
-        avatar="https://avatar.iran.liara.run/public/boy"
-        bio="Graphic designer who loves turning ideas into visual masterpieces."
-      />
-      <UserCard
-        name="Raunak Vishwakarma"
-        age={25}
-        avatar="https://avatar.iran.liara.run/public/boy"
-        bio="Software developer with a passion for creating amazing applications."
-      />
-    </div>
-  );
-};
+// const App = () => {
+//   return (
+//     <div style={{ textAlign: 'center', marginTop: '20px' }}>
+//       <h1>User Profiles</h1>
+//       <UserCard
+//         name="Hariom singh"
+//         age={28}
+//         avatar="https://avatar.iran.liara.run/public/boy"
+//         bio="Graphic designer who loves turning ideas into visual masterpieces."
+//       />
+//       <UserCard
+//         name="Raunak Vishwakarma"
+//         age={25}
+//         avatar="https://avatar.iran.liara.run/public/boy"
+//         bio="Software developer with a passion for creating amazing applications."
+//       />
+//     </div>
 
-export default App;
+
+//   );
+// };
+
+// export default App;
+
+
+// class example
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: 'Hello, World!'
+    };
+  }
+
+  render() {
+    return <h1>{this.state.message}</h1>;
+  }
+}
+
+export default MyComponent;
+
