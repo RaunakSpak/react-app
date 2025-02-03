@@ -1,14 +1,9 @@
-import React from 'react';
-import Counter from './counter';
+import React, {lazy} from 'react';
+
+const AppRoutes = lazy(() => import('./routes'));
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       <Counter/>
-      </header>
-    </div>
-  );
+  return <AppRoutes />
 }
 
-export default App;
+export default React.memo(App);
